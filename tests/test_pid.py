@@ -57,7 +57,7 @@ def test_reset_I_term():
     assert round(pid(0)) == 0
     time.sleep(0.1)
 
-    pid.rest_integral_term_to = None
+    pid.reset_integral_term_to = None
     assert round(pid(0)) == -10.0
 
 
